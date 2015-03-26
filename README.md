@@ -10,4 +10,4 @@ Here the slides and demos of [my session](http://goo.gl/qDaU4v) during the [Comm
 - D7-GruntToTheMax: Enhance GruntFile adding mock real service switching from custom task, unit test and code validation  with Grunt and Css autoprefixing
 
 #Before run every demo
-Remember to go to the project root and run `npm install` command in order to download and install npm dependencies.
+Remember to go to the project root folder and run `npm install` command in order to download and install the npm dependencies.
