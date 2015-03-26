@@ -1,5 +1,5 @@
 # CommunityDays2015
-Here the slides and demos of my session during the Community Days 2015 about Visual Studio 2015, Grunt Bower and Npm
+Here the slides and demos of [my session](http://goo.gl/qDaU4v) during the [Community Days 2015](http://goo.gl/1AqlZm) about Visual Studio 2015, Grunt Bower and Npm
 
 - D1-ASP.NET MVC: how Visual Studio 2013 manage resources
 - D2-AspNet5StarterWeb: Visual Studio 2015 default project template of ASP.NET 5
