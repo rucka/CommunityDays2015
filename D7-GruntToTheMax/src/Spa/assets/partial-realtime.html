@@ -1,0 +1,32 @@
+﻿<div id="main-slider" style="display:inline-block;height:58px;margin-bottom: 20px; overflow:hidden; position:fixed">
+    <img data-slidr="one" src="images/landing1.jpg" />
+</div>
+<div id="realtime" data-ng-controller="realtimeController">
+    <div class="row" style="padding-bottom:15px">
+        <div class="col-lg-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="symbol" data-ng-model="newsymbol">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" data-ng-click="addStock()" data-ng-disabled="cannotAdd()">follow</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4" data-ng-repeat="stock in stocks">
+            <div class="panel" data-ng-class="{'panel-success': stock.direction === 'up', 'panel-danger': stock.direction === 'down'}">
+                <div class="panel-heading">
+                    <span>{{stock.symbol}}</span>
+                    <a href="#" class="pull-right danger" data-ng-click="stock.close()">close</a>
+                </div>
+                <div class="panel-body">
+                    <canvas ng-attr-id="{{ 'chart-' + stock.symbol }}" style="max-width:400px; max-height:200px"></canvas>
+                </div>
+                <div class="panel-footer text-right">
+                    last quote: <b>{{stock.lastQuote}}</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
